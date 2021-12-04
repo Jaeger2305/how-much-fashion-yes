@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6958213848457383530}
   - component: {fileID: 6958213848457383533}
+  - component: {fileID: 6011993906078098106}
   m_Layer: 0
   m_Name: HealthBars
   m_TagString: Untagged
@@ -66,6 +67,52 @@ MonoBehaviour:
   healthBarMaximumReached:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &6011993906078098106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6958213848457383531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 042fd022fa911ad48b39b8fa2652f20c, type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6958213848457383533}
+        m_TargetAssemblyTypeName: HealthGroup, Assembly-CSharp
+        m_MethodName: applyQuestion
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 61f90ace-c5fa-4fb4-9715-ff5451aaf705
+    m_ActionName: Game/Accept[/Keyboard/y]
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Game
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1001 &6958213848901637945
 PrefabInstance:
   m_ObjectHideFlags: 0

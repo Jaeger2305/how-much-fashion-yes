@@ -1,0 +1,34 @@
+{
+    "name": "Game",
+    "maps": [
+        {
+            "name": "Game",
+            "id": "d6a02f45-270c-45f9-bf51-d627f6b72e33",
+            "actions": [
+                {
+                    "name": "Accept",
+                    "type": "Button",
+                    "id": "61f90ace-c5fa-4fb4-9715-ff5451aaf705",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "58bf2027-fef5-43c1-82cd-11537eac0874",
+                    "path": "<Keyboard>/y",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Accept",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
