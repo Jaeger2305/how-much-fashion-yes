@@ -41,3 +41,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: GameInput
+    uniqueID: 2216008603
+    locked: 0
+  - name: Overlay
+    uniqueID: 2514743741
+    locked: 0
