@@ -6,7 +6,7 @@
             "id": "d6a02f45-270c-45f9-bf51-d627f6b72e33",
             "actions": [
                 {
-                    "name": "Accept",
+                    "name": "Confirm",
                     "type": "Button",
                     "id": "61f90ace-c5fa-4fb4-9715-ff5451aaf705",
                     "expectedControlType": "Button",
@@ -18,12 +18,12 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "58bf2027-fef5-43c1-82cd-11537eac0874",
+                    "id": "e8efdcad-afb7-4458-9fad-f988c0e40c2a",
                     "path": "<Keyboard>/y",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Accept",
+                    "action": "Confirm",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
