@@ -13,5 +13,7 @@ MonoBehaviour:
   m_Name: Children
   m_EditorClassIdentifier: 
   question: Do we support child labour?
+  questionTitle: Children
   ePerformance: 0100000002000000
-  decreaseValues: 280000000a000000
+  acceptValues: f6fffffff6ffffff
+  rejectValues: 0200000002000000

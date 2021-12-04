@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cfffb1cef667ac4c9972a3eb01c151c, type: 3}
   m_Name: Green
   m_EditorClassIdentifier: 
-  question: Do we employ GreenWasching?
-  ePerformance: 02000000
-  decreaseValues: 14000000
+  question: Do we employ Greenwashing?
+  questionTitle: Social responsibility
+  ePerformance: 01000000
+  acceptValues: 02000000
+  rejectValues: fbffffff

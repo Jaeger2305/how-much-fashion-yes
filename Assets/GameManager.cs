@@ -51,7 +51,7 @@ public class GameManager : MonoBehaviour
                 if (activeQuestion.ePerformance[i] == pBar.GetEPerformance())
                 {
                     int currentValue = pBar.GetValue();
-                    pBar.SetValue(currentValue - activeQuestion.decreaseValues[i]);
+                    pBar.SetValue(currentValue - activeQuestion.acceptValues[i]);
                     Debug.Log($"{pBar.ePerformance} --> {pBar.GetValue()} ");
                 }
             }

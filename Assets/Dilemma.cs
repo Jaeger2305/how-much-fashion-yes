@@ -12,7 +12,9 @@ public class Dilemma : MonoBehaviour
         questionTextTMP = transform.Find("QuestionText").GetComponent<TMPro.TextMeshPro>();
         questionTitleTMP = transform.Find("QuestionTitle").GetComponent<TMPro.TextMeshPro>();
         SetQuestionText(question.question);
-        SetQuestionTitle("placeholder");
+        SetQuestionTitle(question.questionTitle);
+        int randomImageIndex = Random.Range(0, 5);
+        transform.Find("Images").GetChild(randomImageIndex).gameObject.SetActive(true);
     }
 
     void SetQuestionText(string text)

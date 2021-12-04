@@ -7,8 +7,10 @@ using UnityEngine;
 public class Question : ScriptableObject
 {
     public string question;
+    public string questionTitle;
 
     public List<EPerformance> ePerformance;
 
-    public List<int> decreaseValues;
+    public List<int> acceptValues;
+    public List<int> rejectValues;
 }
