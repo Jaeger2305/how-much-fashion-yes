@@ -14,15 +14,21 @@ public class QuestionManager : MonoBehaviour
         DrawRandomQuestion();
     }
 
-    public void AnswerActiveQuestion(InputAction.CallbackContext context)
+    // I couldn't get the new input to work with onMouseDown of a sprite, so there's an awkward duplicate way of calling the answering of the question :(
+    public void QuestionInput(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
-            Destroy(activeCard);
-            // TODO: connect to health system
-            Debug.Log("not implemented - no impact on health bars");
-            DrawRandomQuestion();
+            AnswerActiveQuestion(context.action.name == "Confirm"); //hacky hacky :(
         }
+    }
+
+    public void AnswerActiveQuestion(bool answer)
+    {
+        Destroy(activeCard);
+        // TODO: connect to health system
+        Debug.Log("not implemented - no impact on health bars");
+        DrawRandomQuestion();
     }
 
     void DrawRandomQuestion()

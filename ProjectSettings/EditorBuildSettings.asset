@@ -11,4 +11,5 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/RichardScene.unity
     guid: f4f7d8aabf1457049b57b07834858c21
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: 523125c5a757f72428ee0466e87788fe, type: 2}
