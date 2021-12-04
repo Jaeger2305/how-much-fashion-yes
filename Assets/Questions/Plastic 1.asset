@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9cfffb1cef667ac4c9972a3eb01c151c, type: 3}
-  m_Name: Green
+  m_Name: Plastic 1
   m_EditorClassIdentifier: 
-  question: Do we employ Greenwashing?
-  questionType: society
-  questionTitle: Social responsibility
-  ePerformance: 01000000
-  acceptValues: 02000000
+  question: Should we steal designs?
+  questionType: image
+  questionTitle: Waste
+  ePerformance: 00000000
+  acceptValues: 0a000000
   rejectValues: fbffffff

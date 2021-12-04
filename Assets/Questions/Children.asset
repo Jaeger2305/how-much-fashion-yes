@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Children
   m_EditorClassIdentifier: 
   question: Do we support child labour?
+  questionType: pollution
   questionTitle: Children
   ePerformance: 0100000002000000
   acceptValues: f6fffffff6ffffff

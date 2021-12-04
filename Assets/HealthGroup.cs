@@ -22,30 +22,13 @@ public class HealthGroup : MonoBehaviour
         });
     }
 
-    public void applyQuestion(InputAction.CallbackContext context)
+    public void applyQuestion(Question question, bool accepted)
     {
-        if (context.performed)
+        int i = 0;
+        question.ePerformance.ForEach(p =>
         {
-            int question = Random.Range(1, 3);
-            if (question == 1) applyTestQuestion1();
-            else if (question == 2) applyTestQuestion2();
-        }
+            healthBars.Find(x => x.healthType == question.questionType).removeHealth(accepted ? question.acceptValues[i++] : question.rejectValues[i++]);
+        });
     }
 
-    void applyTestQuestion1()
-    {
-        healthBars.Find(x => x.healthType == "polution").removeHealth(10);
-        healthBars.Find(x => x.healthType == "society").removeHealth(5);
-        healthBars.Find(x => x.healthType == "image").removeHealth(2);
-        healthBars.Find(x => x.healthType == "security").removeHealth(2);
-        healthBars.Find(x => x.healthType == "profit").addHealth(5);
-    }
-
-    void applyTestQuestion2()
-    {
-        healthBars.Find(x => x.healthType == "society").addHealth(20);
-        healthBars.Find(x => x.healthType == "image").addHealth(15);
-        healthBars.Find(x => x.healthType == "security").addHealth(1);
-        healthBars.Find(x => x.healthType == "profit").removeHealth(10);
-    }
 }

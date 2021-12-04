@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Events;
 
 public class QuestionManager : MonoBehaviour
 {
     public List<Question> questions;
     public GameObject cardPrefab;
+    public UnityEvent<Question, bool> answerActiveDilemma;
     private GameObject activeCard;
 
     void Start()
@@ -25,9 +27,9 @@ public class QuestionManager : MonoBehaviour
 
     public void AnswerActiveQuestion(bool answer)
     {
+        Dilemma q = activeCard.GetComponentInChildren<Dilemma>();
+        answerActiveDilemma.Invoke(q.question, answer);
         Destroy(activeCard);
-        // TODO: connect to health system
-        Debug.Log("not implemented - no impact on health bars");
         DrawRandomQuestion();
     }
 

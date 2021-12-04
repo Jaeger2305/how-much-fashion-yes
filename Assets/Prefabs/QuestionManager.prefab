@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2845589960583040524}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6, y: 0, z: 0}
+  m_LocalPosition: {x: 7.2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2845589961334470865}
@@ -186,7 +186,24 @@ MonoBehaviour:
   questions:
   - {fileID: 11400000, guid: db32682de5e03674b8e1e538276fb6f9, type: 2}
   - {fileID: 11400000, guid: c09f21d8a2eedc34bb73614569eae435, type: 2}
+  - {fileID: 11400000, guid: 019b1732fb5833e44a6a8bd17edb4d0f, type: 2}
+  - {fileID: 11400000, guid: 5f68f89544efe4e46b9311ee55b72b75, type: 2}
   cardPrefab: {fileID: 3608666714474066465, guid: 1e5c9a9bb69861d47b191c1796e9e8eb, type: 3}
+  answerActiveDilemma:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: HealthGroup, Assembly-CSharp
+        m_MethodName: applyQuestion
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2845589961334470864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -276,7 +293,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2845589962158975417}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6, y: 0, z: 0}
+  m_LocalPosition: {x: -7.2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2845589961334470865}

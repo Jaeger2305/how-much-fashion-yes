@@ -7,6 +7,7 @@ using UnityEngine;
 public class Question : ScriptableObject
 {
     public string question;
+    public string questionType;
     public string questionTitle;
 
     public List<EPerformance> ePerformance;

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Plastic
   m_EditorClassIdentifier: 
   question: Should we use polyester?
+  questionType: image
   questionTitle: Waste
   ePerformance: 00000000
   acceptValues: 0a000000
