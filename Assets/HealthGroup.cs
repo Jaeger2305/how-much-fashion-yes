@@ -42,15 +42,18 @@ public class HealthGroup : MonoBehaviour
 
     void applyTestQuestion1()
     {
-        int polution = 10;
-        int social = 10;
-
-        healthBars.Find(x => x.healthType == "polution").removeHealth(polution);
-        //healthBars.Find(x => x.healthType == "social").removeHealth(social);
+        healthBars.Find(x => x.healthType == "polution").removeHealth(10);
+        healthBars.Find(x => x.healthType == "society").removeHealth(5);
+        healthBars.Find(x => x.healthType == "image").removeHealth(2);
+        healthBars.Find(x => x.healthType == "security").removeHealth(2);
+        healthBars.Find(x => x.healthType == "profit").addHealth(5);
     }
 
     void applyTestQuestion2()
     {
-
+        healthBars.Find(x => x.healthType == "society").addHealth(20);
+        healthBars.Find(x => x.healthType == "image").addHealth(15);
+        healthBars.Find(x => x.healthType == "security").addHealth(1);
+        healthBars.Find(x => x.healthType == "profit").removeHealth(10);
     }
 }
