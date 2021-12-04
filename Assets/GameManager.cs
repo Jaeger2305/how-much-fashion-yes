@@ -33,18 +33,37 @@ public class GameManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            dollarCount += 200_000_000;
-            foreach(PerformanceBar performanceBar in performanceBars)
-            {
-                performanceBar.GetEPerformance();
-            }
-            Debug.Log($"Yes! Our company is now worth {dollarCount} USD :D $$$$$$$$$$$$$$$$!!!!!");
+            AnswerYes();
         }
         else if (Input.GetKeyDown(KeyCode.Return))
         {
-            dollarCount -= 200_000_000;
-            Debug.Log($"No! We are worth only {dollarCount} :( !");
+            AnswerNo();
         }
+    }
+
+    private void AnswerYes()
+    {
+        dollarCount += 200_000_000;
+        foreach (PerformanceBar pBar in performanceBars)
+        {
+            for (int i = 0; i < activeQuestion.ePerformance.Count; i++)
+            {
+                if (activeQuestion.ePerformance[i] == pBar.GetEPerformance())
+                {
+                    int currentValue = pBar.GetValue();
+                    pBar.SetValue(currentValue - activeQuestion.decreaseValues[i]);
+                    Debug.Log($"{pBar.ePerformance} --> {pBar.GetValue()} ");
+                }
+            }
+            // Get Enum with performance category
+            pBar.GetEPerformance();
+        }
+        Debug.Log($"Yes! Our company is now worth {dollarCount} USD :D $$$$$$$$$$$$$$$$!!!!!");
+    }
+    private void AnswerNo()
+    {
+        dollarCount -= 200_000_000;
+        Debug.Log($"No! We are worth only {dollarCount} USD :( !");
     }
 
     // To be replaced by QuestionManager
