@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.InputSystem;
 
 public class HealthGroup : MonoBehaviour
 {
@@ -21,36 +22,30 @@ public class HealthGroup : MonoBehaviour
         });
     }
 
-
-    void Update()
+    public void applyQuestion(InputAction.CallbackContext context)
     {
-        if (Input.GetKeyDown("1"))
+        if (context.performed)
         {
-            applyQuestion(1);
+            int question = Random.Range(1, 3);
+            if (question == 1) applyTestQuestion1();
+            else if (question == 2) applyTestQuestion2();
         }
-        if (Input.GetKeyDown("2"))
-        {
-            applyQuestion(2);
-        }
-    }
-
-    void applyQuestion(int question)
-    {
-        if (question == 1) applyTestQuestion1();
-        else if (question == 2) applyTestQuestion2();
     }
 
     void applyTestQuestion1()
     {
-        int polution = 10;
-        int social = 10;
-
-        healthBars.Find(x => x.healthType == "polution").removeHealth(polution);
-        //healthBars.Find(x => x.healthType == "social").removeHealth(social);
+        healthBars.Find(x => x.healthType == "polution").removeHealth(10);
+        healthBars.Find(x => x.healthType == "society").removeHealth(5);
+        healthBars.Find(x => x.healthType == "image").removeHealth(2);
+        healthBars.Find(x => x.healthType == "security").removeHealth(2);
+        healthBars.Find(x => x.healthType == "profit").addHealth(5);
     }
 
     void applyTestQuestion2()
     {
-
+        healthBars.Find(x => x.healthType == "society").addHealth(20);
+        healthBars.Find(x => x.healthType == "image").addHealth(15);
+        healthBars.Find(x => x.healthType == "security").addHealth(1);
+        healthBars.Find(x => x.healthType == "profit").removeHealth(10);
     }
 }
