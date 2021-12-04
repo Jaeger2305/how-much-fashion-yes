@@ -14,7 +14,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         currentHealth = maxHealth;
-        performanceBar.SetMaxHealth(maxHealth);
+        performanceBar.SetValue(maxHealth);
     }
 
     // Update is called once per frame
@@ -29,6 +29,6 @@ public class Player : MonoBehaviour
     private void TakeDamage(int v)
     {
         currentHealth -= 10;
-        performanceBar.SetHealth(currentHealth);
+        performanceBar.SetValue(currentHealth);
     }
 }

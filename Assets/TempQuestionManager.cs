@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class TempQuestionManager : MonoBehaviour
 {
+    public PerformanceBar pollutionBar;
+    public PerformanceBar societyBar;
+    public PerformanceBar imageBar;
+
     public List<Question> questions;
     private Question activeQuestion;
 
@@ -14,7 +18,7 @@ public class TempQuestionManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-
+            Debug.Log("Questions");
         }
     }
 

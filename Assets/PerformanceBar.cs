@@ -15,14 +15,24 @@ public class PerformanceBar : MonoBehaviour
     public Slider slider;
     public EPerformance ePerformance;
 
-    public void SetMaxHealth(int health)
+    public void SetMaxValue(int value)
     {
-        slider.maxValue = health;
-        slider.value = health;
+        slider.maxValue = value;
+        slider.value = value;
     }
 
-    public void SetHealth(int health)
+    public void SetValue(int value)
     {
-        slider.value = health;
+        slider.value = value;
+    }
+
+    public int GetValue()
+    {
+        return (int)slider.value;
+    }
+
+    public EPerformance GetEPerformance()
+    {
+        return ePerformance;
     }
 }
