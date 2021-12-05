@@ -10,15 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9cfffb1cef667ac4c9972a3eb01c151c, type: 3}
-  m_Name: Designs
+  m_Name: Sales
   m_EditorClassIdentifier: 
-  question: A competitor just released a new clothing line, shall we copy it?
-  questionTitle: Ethical
+  question: Sales are great! but to keep up with demand, should we ask for leniency
+    with the overtime rules?
+  questionTitle: Regulation
   acceptValues:
   - performanceType: 2
     performanceImpact: -1
-  - performanceType: 1
-    performanceImpact: -1
-  rejectValues:
-  - performanceType: 2
-    performanceImpact: 2
+  rejectValues: []

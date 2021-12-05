@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cfffb1cef667ac4c9972a3eb01c151c, type: 3}
   m_Name: Children
   m_EditorClassIdentifier: 
-  question: Do we support child labour?
-  questionTitle: Children
+  question: Open new factory with cheap labour?
+  questionTitle: Labour
   acceptValues:
   - performanceType: 1
-    performanceImpact: -4
+    performanceImpact: -1
   - performanceType: 2
-    performanceImpact: -20
+    performanceImpact: -1
   rejectValues:
   - performanceType: 1
     performanceImpact: 2

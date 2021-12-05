@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cfffb1cef667ac4c9972a3eb01c151c, type: 3}
   m_Name: Green
   m_EditorClassIdentifier: 
-  question: Do we employ Greenwashing?
-  questionTitle: Social responsibility
+  question: Start an ad campaign on clothing from recycled materials
+  questionTitle: Greenwashing
   acceptValues:
   - performanceType: 1
     performanceImpact: 5
-  - performanceType: 2
-    performanceImpact: -5
+  - performanceType: 0
+    performanceImpact: 1
   rejectValues: []

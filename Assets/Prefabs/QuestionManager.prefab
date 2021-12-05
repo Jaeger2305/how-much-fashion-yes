@@ -184,10 +184,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questions:
-  - {fileID: 11400000, guid: db32682de5e03674b8e1e538276fb6f9, type: 2}
-  - {fileID: 11400000, guid: c09f21d8a2eedc34bb73614569eae435, type: 2}
-  - {fileID: 11400000, guid: 019b1732fb5833e44a6a8bd17edb4d0f, type: 2}
+  - {fileID: 11400000, guid: 6ea3095260e51e34595ee219825cbe57, type: 2}
   - {fileID: 11400000, guid: 5f68f89544efe4e46b9311ee55b72b75, type: 2}
+  - {fileID: 11400000, guid: 0f6725a4f9e18c24fa6ebb5c4c585e51, type: 2}
+  - {fileID: 11400000, guid: 521e34e7189d4a64d873735e4deb53f2, type: 2}
+  - {fileID: 11400000, guid: 019b1732fb5833e44a6a8bd17edb4d0f, type: 2}
+  - {fileID: 11400000, guid: db32682de5e03674b8e1e538276fb6f9, type: 2}
+  - {fileID: 11400000, guid: 0ba70eaa2788b98459a7f967b4a0ee39, type: 2}
+  - {fileID: 11400000, guid: a3a5a5268e3cfe643ac110dffef0cd91, type: 2}
+  - {fileID: 11400000, guid: c09f21d8a2eedc34bb73614569eae435, type: 2}
+  - {fileID: 11400000, guid: bcef4a2b0ddc81647b288d51cc043615, type: 2}
   cardPrefab: {fileID: 3608666714474066465, guid: 1e5c9a9bb69861d47b191c1796e9e8eb, type: 3}
   answerActiveDilemma:
     m_PersistentCalls:
