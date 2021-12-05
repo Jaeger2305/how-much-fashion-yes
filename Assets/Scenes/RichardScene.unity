@@ -952,6 +952,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1587740055436834206, guid: 174ee800d72fbf842b41bc4cbc17b30c, type: 3}
+      propertyPath: healthBarMinimumReached.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 24459212}
     - target: {fileID: 1603681764994786572, guid: 174ee800d72fbf842b41bc4cbc17b30c, type: 3}
       propertyPath: m_AnchorMax.x
       value: 1
@@ -1170,41 +1174,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 174ee800d72fbf842b41bc4cbc17b30c, type: 3}
---- !u!1 &2118432293 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6726355389381774316, guid: 174ee800d72fbf842b41bc4cbc17b30c, type: 3}
+--- !u!114 &2118432294 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1587740055436834206, guid: 174ee800d72fbf842b41bc4cbc17b30c, type: 3}
   m_PrefabInstance: {fileID: 2118432292}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2118432294
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2118432293}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e2c0c59446fa68349b09aa84c93aa3b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthBarMinimumReached:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 24459212}
-        m_TargetAssemblyTypeName: GameEnd, Assembly-CSharp
-        m_MethodName: gameOver
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  healthBarMaximumReached:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1001 &2845589960637060135
 PrefabInstance:
   m_ObjectHideFlags: 0
