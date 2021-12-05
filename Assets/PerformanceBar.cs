@@ -54,8 +54,8 @@ public class PerformanceBar : MonoBehaviour
 
     private void setHealth(int amount)
     {
-        performance = amount;
-        slider.value = amount;
+        performance = Mathf.Clamp(amount, min, max);
+        slider.value = performance;
         if (amount <= min) minReached.Invoke();
         if (amount >= max) maxReached.Invoke();
     }

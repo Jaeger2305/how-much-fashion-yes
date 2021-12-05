@@ -24,10 +24,10 @@ public class PerformanceBarGroup : MonoBehaviour
 
     public void applyQuestion(Question question, bool accepted)
     {
-        int i = 0;
-        question.ePerformance.ForEach(p =>
+        List<Question.PerformanceProfile> valuesToApply = accepted ? question.acceptValues : question.rejectValues;
+        valuesToApply.ForEach(p =>
         {
-            performanceBars.Find(x => x.ePerformance == question.questionType).addHealth(accepted ? question.acceptValues[i++] : question.rejectValues[i++]);
+            performanceBars.Find(x => x.ePerformance == p.performanceType).addHealth(p.performanceImpact);
         });
     }
 

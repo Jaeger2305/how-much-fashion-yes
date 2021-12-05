@@ -7,11 +7,15 @@ using UnityEngine;
 public class Question : ScriptableObject
 {
     public string question;
-    public EPerformance questionType;
     public string questionTitle;
 
-    public List<EPerformance> ePerformance;
+    [System.Serializable]
+    public struct PerformanceProfile
+    {
+        public EPerformance performanceType;
+        public int performanceImpact;
+    };
 
-    public List<int> acceptValues;
-    public List<int> rejectValues;
+    public List<PerformanceProfile> acceptValues;
+    public List<PerformanceProfile> rejectValues;
 }
