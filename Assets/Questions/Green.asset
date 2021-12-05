@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: Green
   m_EditorClassIdentifier: 
   question: Do we employ Greenwashing?
-  questionType: society
   questionTitle: Social responsibility
-  ePerformance: 01000000
-  acceptValues: 02000000
-  rejectValues: fbffffff
+  acceptValues:
+  - performanceType: 1
+    performanceImpact: 5
+  - performanceType: 2
+    performanceImpact: -5
+  rejectValues: []
