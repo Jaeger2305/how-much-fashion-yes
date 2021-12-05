@@ -4,19 +4,19 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
-public class HealthGroup : MonoBehaviour
+public class PerformanceBarGroup : MonoBehaviour
 {
     public UnityEvent healthBarMinimumReached;
     public UnityEvent healthBarMaximumReached;
 
-    private List<HealthBar> healthBars = new List<HealthBar>();
+    private List<PerformanceBar> performanceBars = new List<PerformanceBar>();
 
     void Start()
     {
-        HealthBar[] healthBars = gameObject.GetComponentsInChildren<HealthBar>();
-        this.healthBars.AddRange(healthBars);
+        PerformanceBar[] performanceBars = gameObject.GetComponentsInChildren<PerformanceBar>();
+        this.performanceBars.AddRange(performanceBars);
 
-        this.healthBars.ForEach(b => {
+        this.performanceBars.ForEach(b => {
             b.maxReached.AddListener(healthBarMaximumReached.Invoke);
             b.minReached.AddListener(healthBarMinimumReached.Invoke);
         });
@@ -27,7 +27,7 @@ public class HealthGroup : MonoBehaviour
         int i = 0;
         question.ePerformance.ForEach(p =>
         {
-            healthBars.Find(x => x.healthType == question.questionType).removeHealth(accepted ? question.acceptValues[i++] : question.rejectValues[i++]);
+            performanceBars.Find(x => x.ePerformance == question.questionType).addHealth(accepted ? question.acceptValues[i++] : question.rejectValues[i++]);
         });
     }
 
